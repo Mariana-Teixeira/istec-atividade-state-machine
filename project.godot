@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="State Machine"
+run/main_scene="uid://dq5polprcsqdq"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 

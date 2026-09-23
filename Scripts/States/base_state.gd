@@ -1,0 +1,1 @@
+class_name BaseState extends RefCounted
