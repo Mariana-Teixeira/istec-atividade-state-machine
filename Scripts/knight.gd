@@ -2,9 +2,9 @@ class_name Knight extends CharacterBody2D
 
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
 
-@export var vision_range: float
-@export var attack_range: float
-@export var speed: float
+@export var vision_range: float = 32.0
+@export var attack_range: float = 16.0
+@export var speed: float = 8.0
 
 var state_machine: StateMachine
 var direction_to_cursor: Vector2
