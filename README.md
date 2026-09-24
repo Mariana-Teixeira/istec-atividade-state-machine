@@ -48,7 +48,6 @@ No final, o projeto deverá permitir observar a transição entre os três estad
 Antes de começares a atividade, deves:
 
 * instalar o Godot;
-* ter uma conta no GitHub;
 * fazer fork deste repositório.
 
 ### 2.1. Instala o Godot
