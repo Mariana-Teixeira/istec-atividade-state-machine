@@ -1,1 +1,1 @@
-class_name IdleState extends RefCounted
+class_name IdleState extends BaseState

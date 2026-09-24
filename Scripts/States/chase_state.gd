@@ -1,1 +1,1 @@
-class_name ChaseState extends RefCounted
+class_name ChaseState extends BaseState

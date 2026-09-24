@@ -1,1 +1,1 @@
-class_name AttackState extends RefCounted
+class_name AttackState extends BaseState
