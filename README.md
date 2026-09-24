@@ -4,11 +4,9 @@
 
 * [1. Objetivos](#1-objetivos)
 * [2. Pré-requisitos](#2-pré-requisitos)
-
   * [2.1. Instala o Godot](#21-instala-o-godot)
   * [2.2. Faz fork do repositório](#22-faz-fork-do-repositório)
 * [3. Tutorial](#3-tutorial)
-
   * [3.1. Cria a classe base `BaseState`](#31-cria-a-classe-base-basestate)
   * [3.2. Cria o estado `IdleState`](#32-cria-o-estado-idlestate)
   * [3.3. Cria o estado `ChaseState`](#33-cria-o-estado-chasestate)
@@ -16,7 +14,6 @@
   * [3.5. Cria o `StateMachine`](#35-cria-o-statemachine)
   * [3.6. Conecta a `StateMachine` ao `Knight`](#36-conecta-a-statemachine-ao-knight)
 * [4. Cria uma mecânica original](#4-cria-uma-mecânica-original)
-
   * [4.1. Cria uma nova branch](#41-cria-uma-nova-branch)
   * [4.2. Desenvolve a mecânica](#42-desenvolve-a-mecânica)
   * [4.3. Testa a mecânica](#43-testa-a-mecânica)
