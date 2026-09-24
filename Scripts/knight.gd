@@ -10,18 +10,19 @@ var state_machine: StateMachine
 var direction_to_cursor: Vector2
 
 func _ready() -> void:
-	pass
+	state_machine = StateMachine.new(self)
 
 func _process(_delta: float) -> void:
 	read_cursor_position()
 
-func _physics_process(delta: float) -> void:
-	pass
+func _physics_process(_delta: float) -> void:
+	state_machine.tick()
 
 func read_cursor_position() -> void:
-	direction_to_cursor = get_global_mouse_position() - global_position
+	var cursor_position: Vector2 = get_global_mouse_position()
+	direction_to_cursor = cursor_position - global_position
 
-func cursor_within_vision_radius() -> bool:
+func cursor_within_vision_range() -> bool:
 	return direction_to_cursor.length() < vision_range
 
 func cursor_within_attack_range() -> bool:
