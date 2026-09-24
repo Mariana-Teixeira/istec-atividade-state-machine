@@ -221,7 +221,7 @@ Abre o ficheiro `state_machine.gd`.
 A classe `StateMachine` mantém o estado atual do personagem e gere as transições entre estados.
 
 ```gdscript
-class_name StateMachine
+class_name StateMachine extends RefCounted
 
 var target: Knight
 var current_state: BaseState
@@ -295,6 +295,10 @@ func cursor_within_vision_range() -> bool:
 
 func cursor_within_attack_range() -> bool:
 	return direction_to_cursor.length() < attack_range
+
+func _draw() -> void:
+	draw_arc(Vector2.ZERO, vision_range, 0, TAU, 64, Color.BLUE, 0.5)
+	draw_arc(Vector2.ZERO, attack_range, 0, TAU, 64, Color.RED, 0.5)
 ```
 
 As variáveis `vision_range` e `attack_range` definem as distâncias utilizadas para determinar o estado do personagem.  
